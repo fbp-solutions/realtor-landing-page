@@ -224,14 +224,14 @@
       font-size: 1rem;
     }
 
-    /* Packages Grid */
+    /* Packages Grid - 4 Column Layout */
     .packages-container {
-      max-width: 1200px;
-      margin: 0 auto 5rem;
+      max-width: 1300px;
+      margin: 0 auto 1.5rem;
       padding: 0 1.5rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1.5rem;
     }
 
     .package-card {
@@ -256,6 +256,11 @@
       box-shadow: var(--shadow-md);
     }
 
+    .package-card.custom-card {
+      background-color: #f1f5f9;
+      border: 2px dashed var(--executive-navy);
+    }
+
     .featured-tag {
       background: var(--brushed-gold);
       color: var(--executive-navy);
@@ -268,13 +273,17 @@
     }
 
     .card-header {
-      padding: 2rem 1.75rem 1.5rem;
+      padding: 1.75rem 1.5rem 1.25rem;
       background: var(--white);
       border-bottom: 1px solid var(--border-color);
     }
 
+    .custom-card .card-header {
+      background: transparent;
+    }
+
     .card-title {
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       color: var(--executive-navy);
       font-weight: 700;
     }
@@ -286,25 +295,25 @@
     }
 
     .card-price {
-      margin-top: 1.25rem;
+      margin-top: 1rem;
       display: flex;
       align-items: baseline;
       gap: 0.35rem;
     }
 
     .price-amount {
-      font-size: 2.25rem;
+      font-size: 2rem;
       font-weight: 800;
       color: var(--executive-navy);
     }
 
     .price-period {
       color: var(--text-muted);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .card-body {
-      padding: 1.75rem;
+      padding: 1.5rem;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
@@ -317,12 +326,12 @@
     }
 
     .specs-list li {
-      padding: 0.6rem 0;
+      padding: 0.55rem 0;
       border-bottom: 1px dashed var(--border-color);
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       display: flex;
       align-items: flex-start;
-      gap: 0.6rem;
+      gap: 0.5rem;
     }
 
     .specs-list li:last-child {
@@ -334,17 +343,25 @@
       font-weight: bold;
     }
 
-    .artwork-note {
-      background-color: var(--warm-studio-paper);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      padding: 0.85rem;
-      margin-bottom: 1.5rem;
-      font-size: 0.82rem;
-      color: var(--text-dark);
+    /* Asterisk Footnote below grid */
+    .grid-footnote {
+      max-width: 1300px;
+      margin: 0 auto 4rem;
+      padding: 0 1.5rem;
+      text-align: center;
     }
 
-    .artwork-note strong {
+    .grid-footnote p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      background-color: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 0.85rem 1.25rem;
+      display: inline-block;
+    }
+
+    .grid-footnote strong {
       color: var(--executive-navy);
     }
 
@@ -535,10 +552,6 @@
             <li><span class="check-icon">✓</span> Top & Bottom Realtor Grommets Included</li>
           </ul>
 
-          <div class="artwork-note">
-            <strong>📁 Artwork & Layout:</strong> Submit print-ready PDF files at checkout or add our <strong>+$49 Layout & Setup Service</strong> to have us format your logo, headshot, and contact info with digital proofing.
-          </div>
-
           <a href="mailto:orders@fusionbizprint.com?subject=New%20Agent%20Starter%20Kit%20Order%20-%20Fusion%20Biz%20%26%20Print%20Solutions&body=Hi%20Fusion%20Biz%20%26%20Print%20Team%2C%0A%0AI%20would%20like%20to%20order%20the%20New%20Agent%20Starter%20Kit%20(%24249).%0A%0A%3D%3D%3D%20AGENT%20DETAILS%20%3D%3D%3D%0AAgent%20Name%3A%0ABrokerage%3A%0APhone%20Number%3A%0AShipping%20Address%3A%0A%0A%3D%3D%3D%20ARTWORK%20%26%20SETUP%20%3D%3D%3D%0AArtwork%20Option%20(Select%20One)%3A%0A%5B%20%5D%20I%20will%20attach%20print-ready%20PDFs%0A%5B%20%5D%20Add%20%2449%20Layout%20%26%20Proofing%20Service%20(Attach%20logo%2C%20headshot%2C%20%26%20contact%20details)%0A%0A%3D%3D%3D%20CUSTOMIZATION%20%3D%3D%3D%0ARider%20Selections%20(Select%202%3A%20Coming%20Soon%20/%20For%20Sale%20/%20Sold%20/%20For%20Lease)%3A%0ABusiness%20Card%20Finish%20(18pt%20Gloss%20UV)%3A" class="btn-secondary" style="width: 100%; text-align: center;">Order Starter Kit</a>
         </div>
       </div>
@@ -564,10 +577,6 @@
             <li><span class="check-icon">✓</span> <strong>2x</strong> "Remove Shoes" Open House Signs</li>
           </ul>
 
-          <div class="artwork-note">
-            <strong>📁 Artwork & Layout:</strong> Submit print-ready PDF files at checkout or add our <strong>+$49 Layout & Setup Service</strong> to have us format your logo, headshot, and contact info with digital proofing.
-          </div>
-
           <a href="mailto:orders@fusionbizprint.com?subject=Established%20Residential%20Kit%20Order%20-%20Fusion%20Biz%20%26%20Print%20Solutions&body=Hi%20Fusion%20Biz%20%26%20Print%20Team%2C%0A%0AI%20would%20like%20to%20order%20the%20Established%20Residential%20Kit%20(%24679).%0A%0A%3D%3D%3D%20AGENT%20DETAILS%20%3D%3D%3D%0AAgent%20Name%3A%0ABrokerage%3A%0APhone%20Number%3A%0AShipping%20Address%3A%0A%0A%3D%3D%3D%20ARTWORK%20%26%20SETUP%20%3D%3D%3D%0AArtwork%20Option%20(Select%20One)%3A%0A%5B%20%5D%20I%20will%20attach%20print-ready%20PDFs%0A%5B%20%5D%20Add%20%2449%20Layout%20%26%20Proofing%20Service%20(Attach%20logo%2C%20headshot%2C%20%26%20contact%20details)%0A%0A%3D%3D%3D%20CUSTOMIZATION%20%3D%3D%3D%0ARider%20Selections%20(Select%204%3A%20Coming%20Soon%20/%20For%20Sale%20/%20Sold%20/%20Open%20House)%3A" class="btn-primary" style="width: 100%; text-align: center;">Order Residential Kit</a>
         </div>
       </div>
@@ -592,14 +601,37 @@
             <li><span class="check-icon">✓</span> <strong>10x</strong> Lawn Signs (24" x 18", 4mm) with H-Stands</li>
           </ul>
 
-          <div class="artwork-note">
-            <strong>📁 Artwork & Layout:</strong> Submit print-ready PDF files at checkout or add our <strong>+$49 Layout & Setup Service</strong> to have us format your logo, headshot, and contact info with digital proofing.
-          </div>
-
           <a href="mailto:orders@fusionbizprint.com?subject=Commercial%20Powerhouse%20Kit%20Order%20-%20Fusion%20Biz%20%26%20Print%20Solutions&body=Hi%20Fusion%20Biz%20%26%20Print%20Team%2C%0A%0AI%20would%20like%20to%20order%20the%20Commercial%20Powerhouse%20Kit%20(%24989).%0A%0A%3D%3D%3D%20AGENT%20DETAILS%20%3D%3D%3D%0AAgent%20Name%3A%0ABrokerage%3A%0APhone%20Number%3A%0AShipping%20Address%3A%0A%0A%3D%3D%3D%20ARTWORK%20%26%20SETUP%20%3D%3D%3D%0AArtwork%20Option%20(Select%20One)%3A%0A%5B%20%5D%20I%20will%20attach%20print-ready%20PDFs%0A%5B%20%5D%20Add%20%2449%20Layout%20%26%20Proofing%20Service%20(Attach%20logo%2C%20headshot%2C%20%26%20contact%20details)%0A%0A%3D%3D%3D%20CUSTOMIZATION%20%3D%3D%3D%0ARider%20Selections%20(Select%204%3A%20For%20Lease%20/%20Leased%20/%20For%20Sale%20/%20Custom)%3A%0ASite%20Sign%20Dimensions%20(30x36%20Coroplast)%3A" class="btn-secondary" style="width: 100%; text-align: center;">Order Commercial Kit</a>
         </div>
       </div>
 
+      <!-- Kit 4: Custom & Enterprise Packages -->
+      <div class="package-card custom-card">
+        <div class="card-header">
+          <h3 class="card-title">Custom & Team Packages</h3>
+          <p class="card-subtitle">Tailored volume signage for teams & brokerages</p>
+          <div class="card-price">
+            <span class="price-amount" style="font-size: 1.6rem;">Custom Quote</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul class="specs-list">
+            <li><span class="check-icon">✓</span> Custom Dimensions & Specialized Riders</li>
+            <li><span class="check-icon">✓</span> Oversized Vinyl Banners & Window Graphics</li>
+            <li><span class="check-icon">✓</span> Team-Wide & Brokerage Tiered Discounts</li>
+            <li><span class="check-icon">✓</span> Branded Apparel & Promotional Collateral</li>
+            <li><span class="check-icon">✓</span> Direct Account Manager & Priority Proofing</li>
+          </ul>
+
+          <a href="mailto:orders@fusionbizprint.com?subject=Custom%20%26%20Team%20Package%20Quote%20-%20Fusion%20Biz%20%26%20Print%20Solutions&body=Hi%20Fusion%20Biz%20%26%20Print%20Team%2C%0A%0AI%20would%20like%20to%20request%20a%20custom%20quote%20for%20a%20tailored%20print/signage%20package.%0A%0A%3D%3D%3D%20AGENT%20/%20TEAM%20DETAILS%20%3D%3D%3D%0AContact%20Name%3A%0ATeam%20/%20Brokerage%20Name%3A%0APhone%20Number%3A%0ANumber%20of%20Agents%20in%20Team%3A%0A%0A%3D%3D%3D%20PROJECT%20REQUIREMENTS%20%3D%3D%3D%0AProducts%20Needed%3A%0ATarget%20Quantities%3A%0ANeeded%20By%20Date%3A" class="btn-primary" style="width: 100%; text-align: center; background-color: var(--executive-navy); color: var(--white);">Request Custom Quote</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Asterisk Global Artwork Footnote -->
+    <div class="grid-footnote">
+      <p>* <strong>📁 Artwork & Layout:</strong> Submit print-ready PDF files at checkout or add our <strong>+$49 Layout & Setup Service</strong> to have us format your logo, headshot, and contact info with digital proofing.</p>
     </div>
   </section>
 
@@ -698,6 +730,7 @@
         <p><a href="#packages">New Agent Kit</a></p>
         <p><a href="#packages">Established Residential Kit</a></p>
         <p><a href="#packages">Commercial Powerhouse Kit</a></p>
+        <p><a href="#packages">Custom Team Packages</a></p>
       </div>
 
       <div class="footer-col">

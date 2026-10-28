@@ -285,3 +285,382 @@
     .card-header {
       padding: 1.75rem 1.5rem 1.25rem;
       background: var(--white);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .custom-card .card-header {
+      background: transparent;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      color: var(--executive-navy);
+      font-weight: 700;
+    }
+
+    .card-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    .card-price {
+      margin-top: 1rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.35rem;
+    }
+
+    .price-amount {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--executive-navy);
+    }
+
+    .price-period {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .specs-list {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .specs-list li {
+      padding: 0.55rem 0;
+      border-bottom: 1px dashed var(--border-color);
+      font-size: 0.88rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .specs-list li:last-child {
+      border-bottom: none;
+    }
+
+    .check-icon {
+      color: var(--brushed-gold);
+      font-weight: bold;
+    }
+
+    /* Asterisk Footnote below grid */
+    .grid-footnote {
+      max-width: 1300px;
+      margin: 0 auto 4rem;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+
+    .grid-footnote p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      background-color: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 0.85rem 1.25rem;
+      display: inline-block;
+    }
+
+    .grid-footnote strong {
+      color: var(--executive-navy);
+    }
+
+    /* Custom Inquiry Banner */
+    .custom-banner {
+      background-color: var(--executive-navy);
+      color: var(--white);
+      padding: 3.5rem 2rem;
+      text-align: center;
+      border-top: 4px solid var(--brushed-gold);
+      border-bottom: 4px solid var(--brushed-gold);
+      margin-bottom: 4rem;
+    }
+
+    .custom-banner-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .custom-banner h3 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .custom-banner p {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 1.75rem;
+      line-height: 1.6;
+    }
+
+    /* Specifications Matrix Table */
+    .matrix-section {
+      background-color: var(--white);
+      padding: 4rem 2rem;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .matrix-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      overflow-x: auto;
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .specs-table th, .specs-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .specs-table th {
+      background-color: var(--executive-navy);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    .specs-table th:first-child {
+      border-top-left-radius: 6px;
+    }
+
+    .specs-table th:last-child {
+      border-top-right-radius: 6px;
+    }
+
+    .specs-table tr:hover {
+      background-color: var(--warm-studio-paper);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--executive-navy);
+      color: var(--white);
+      padding: 3rem 2rem 2rem;
+      border-top: 4px solid var(--brushed-gold);
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-col h4 {
+      color: var(--brushed-gold);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-col p, .footer-col a {
+      color: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(197, 160, 89, 0.15);
+      border: 1px solid var(--brushed-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--brushed-gold);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .social-icon:hover {
+      background: var(--brushed-gold);
+      color: var(--executive-navy);
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      nav ul { display: none; }
+      .hero-cta { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="https://fusionbizprint.com" class="brand-logo">
+        <div class="logo-mark">FB</div>
+        <div class="logo-text">
+          <span class="logo-title">REALTOR HUB</span>
+          <span class="logo-subtitle">FUSION BIZ & PRINT SOLUTIONS</span>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="https://fusionbizprint.com">Main Hub</a></li>
+          <li><a href="https://realtorhub.fusionbizprint.com">Realtor Hub</a></li>
+          <li><a href="https://print.fusionbizprint.com">Print Portal</a></li>
+          <li><a href="#packages">Kits</a></li>
+          <li><a href="#specs">Specs</a></li>
+          <li>
+            <a href="mailto:orders@fusionbizprint.com?subject=Realtor%20Print%20Order%20Inquiry%20-%20Fusion%20Biz%20%26%20Print%20Solutions&body=Hi%20Fusion%20Biz%20%26%20Print%20Team%2C%0A%0AI%20would%20like%20to%20place%20a%20realtor%20print%20order.%0A%0A%3D%3D%3D%20AGENT%20DETAILS%20%3D%3D%3D%0AAgent%20Name%3A%0ABrokerage%3A%0APhone%20Number%3A%0ADelivery%20Address%3A%0APromo%20Code%20(if%20applicable)%3A%0A%0A%3D%3D%3D%20ARTWORK%20%26%20SETUP%20%3D%3D%3D%0AArtwork%20Option%20Selected%20(Select%20One)%3A%0A%5B%20%5D%20I%20will%20attach%20print-ready%20PDF%20vector%20files%0A%5B%20%5D%20Add%20%2449%20Professional%20Layout%20%26%20Setup%20Service%20(Send%20logo%2C%20headshot%2C%20%26%20details)%0A%0A%3D%3D%3D%20ORDER%20DETAILS%20%3D%3D%3D%0AKit%20/%20Products%20Interested%20In%3A%0ARider%20Text%20Needed%3A" class="btn-primary">Order Direct</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge-gold">Commercial Grade Real Estate Print</span>
+      <h1>Turnkey Print Solutions & Packages for New & Top-Producing Agents</h1>
+      <p>Elevate your listing visibility with high-precision 10mm Coroplast post signs, custom grommet riders, and 21pt soft-touch velvet cards designed for real estate professionals.</p>
+      <div class="hero-cta">
+        <a href="#packages" class="btn-primary">Explore Packages</a>
+        <a href="#specs" class="btn-secondary" style="color: white; border-color: white;">View Material Specs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages">
+    <div class="section-header">
+      <h2>Curated Realtor Kits</h2>
+      <p>All-in-one sign and marketing collateral packages engineered for maximum neighborhood impact and listing performance.</p>
+    </div>
+
+    <div class="packages-container">
+
+      <!-- Kit 1: New Agent Starter Kit -->
+      <div class="package-card">
+        <div class="card-header">
+          <h3 class="card-title">New Agent Starter Kit</h3>
+          <p class="card-subtitle">Essential setup for individual agents & new listings</p>
+          <div class="card-price">
+            <span class="price-amount">$249</span>
+            <span class="price-period">/ package</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul class="specs-list">
+            <li><span class="check-icon">✓</span> <strong>1,000x</strong> 18pt High Gloss UV Business Cards</li>
+            <li><span class="check-icon">✓</span> <strong>1x</strong> Main Post Sign (24" x 30", 10mm Coroplast)</li>
+            <li><span class="check-icon">✓</span> <strong>2x</strong> Sign Riders (24" x 6", 10mm Coroplast)</li>
+            <li><span class="check-icon">✓</span> <strong>1x</strong> "Remove Shoes" Open House Sign (8" x 12")</li>
+            <li><span class="check-icon">✓</span> Top & Bottom Realtor Grommets Included</li>
+          </ul>
+
+          <a href="mailto:orders@fusionbizprint.com?subject=New%20Agent%20Starter%20Kit%20Order%20-%20Fusion%20Biz%20%26%20Print%20Solutions&body=Hi%20Fusion%20Biz%20%26%20Print%20Team%2C%0A%0AI%20would%20like%20to%20order%20the%20New%20Agent%20Starter%20Kit%20(%24249).%0A%0A%3D%3D%3D%20AGENT%20DETAILS%20%3D%3D%3D%0AAgent%20Name%3A%0ABrokerage%3A%0APhone%20Number%3A%0AShipping%20Address%3A%0APromo%20Code%3A%0A%0A%3D%3D%3D%20ARTWORK%20%26%20SETUP%20%3D%3D%3D%0AArtwork%20Option%20(Select%20One)%3A%0A%5B%20%5D%20I%20will%20attach%20print-ready%20PDFs%0A%5B%20%5D%20Add%20%2449%20Layout%20%26%20Proofing%20Service%20(Attach%20logo%2C%20headshot%2C%20%26%20contact%20details)%0A%0A%3D%3D%3D%20CUSTOMIZATION%20%3D%3D%3D%0ARider%20Selections%20(Select%202%3A%20Coming%20Soon%20/%20For%20Sale%20/%20Sold%20/%20For%20Lease)%3A%0ABusiness%20Card%20Finish%20(18pt%20Gloss%20UV)%3A" class="btn-secondary" style="width: 100%; text-align: center;">Order Starter Kit</a>
+        </div>
+      </div>
+
+      <!-- Kit 2: Established Residential Kit -->
+      <div class="package-card featured">
+        <div class="featured-tag">Most Popular for Top Producers</div>
+        <div class="card-header">
+          <h3 class="card-title">Established Residential Kit</h3>
+          <p class="card-subtitle">Complete volume package for active home marketers</p>
+          <div class="card-price">
+            <span class="price-amount">$679</span>
+            <span class="price-period">/ package</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul class="specs-list">
+            <li><span class="check-icon">✓</span> <strong>1,000x</strong> Premium 21pt Soft-Touch Velvet Cards</li>
+            <li><span class="check-icon">✓</span> <strong>10x</strong> Lawn Signs (24" x 18", 4mm) with H-Stands</li>
+            <li><span class="check-icon">✓</span> <strong>2x</strong> Main Post Signs (24" x 30", 10mm Coroplast)</li>
+            <li><span class="check-icon">✓</span> <strong>4x</strong> Sign Riders (24" x 6", 10mm Coroplast)</li>
+            <li><span class="check-icon">✓</span> <strong>1x</strong> Heavy Duty A-Frame Sign (24" x 36")</li>
+            <li><span class="check-icon">✓</span> <strong>2x</strong> "Remove Shoes" Open House Signs</li>
+          </ul>
+
+          <a href="mailto:orders@fusionbizprint.com?subject=Established%20Residential%20Kit%20Order%20-%20Fusion%20Biz%20%26%20Print%20Solutions&body=Hi%20Fusion%20Biz%20%26%20Print%20Team%2C%0A%0AI%20would%20like%20to%20order%20the%20Established%20Residential%20Kit%20(%24679).%0A%0A%3D%3D%3D%20AGENT%20DETAILS%20%3D%3D%3D%0AAgent%20Name%3A%0ABrokerage%3A%0APhone%20Number%3A%0AShipping%20Address%3A%0APromo%20Code%3A%0A%0A%3D%3D%3D%20ARTWORK%20%26%20SETUP%20%3D%3D%3D%0AArtwork%20Option%20(Select%20One)%3A%0A%5B%20%5D%20I%20will%20attach%20print-ready%20PDFs%0A%5B%20%5D%20Add%20%2449%20Layout%20%26%20Proofing%20Service%20(Attach%20logo%2C%20headshot%2C%20%26%20contact%20details)%0A%0A%3D%3D%3D%20CUSTOMIZATION%20%3D%3D%3D%0ARider%20Selections%20(Select%204%3A%20Coming%20Soon%20/%20For%20Sale%20/%20Sold%20/%20Open%20House)%3A" class="btn-primary" style="width: 100%; text-align: center;">Order Residential Kit</a>
+        </div>
+      </div>
+
+      <!-- Kit 3: Commercial Powerhouse Kit -->
+      <div class="package-card">
+        <div class="card-header">
+          <h3 class="card-title">Commercial Powerhouse Kit</h3>
+          <p class="card-subtitle">Heavy-duty signage built for commercial site control</p>
+          <div class="card-price">
+            <span class="price-amount">$989</span>
+            <span class="price-period">/ package</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul class="specs-list">
+            <li><span class="check-icon">✓</span> <strong>1,000x</strong> Premium 21pt Soft-Touch Velvet Cards</li>
+            <li><span class="check-icon">✓</span> <strong>2x</strong> Large Main Post Signs (30" x 36", 10mm Coroplast)</li>
+            <li><span class="check-icon">✓</span> <strong>4x</strong> Commercial Riders (30" x 8", 10mm Coroplast)</li>
+            <li><span class="check-icon">✓</span> <strong>1x</strong> Heavy-Duty PVC Sandwich Board (24" x 32", 10mm)</li>
+            <li><span class="check-icon">✓</span> <strong>1x</strong> 9ft Custom Feather Flag (with Ground Spike)</li>
+            <li><span class="check-icon">✓</span> <strong>10x</strong> Lawn Signs (24" x 18", 4mm) with H-Stands</li>
+          </ul>
+
+          <a href="mailto:orders@fusionbizprint.com?subject=Commercial%20Powerhouse%20Kit%20Order%20-%20Fusion%20Biz%20%26%20Print%20Solutions&body=Hi%20Fusion%20Biz%20%26%20Print%20Team%2C%0A%0AI%20would%20like%20to%20order%20the%20Commercial%20Powerhouse%20Kit%20(%24989).%0A%0A%3D%3D%3D%20AGENT%20DETAILS%20%3D%3D%3D%0AAgent%20Name%3A%0ABrokerage%3A%0APhone%20Number%3A%0AShipping%20Address%3A%0APromo%20Code%3A%0A%0A%3D%3D%3D%20ARTWORK%20%26%20SETUP%20%3D%3D%3D%0AArtwork%20Option%20(Select%20One)%3A%0A%5B%20%5D%20I%20will%20attach%20print-ready%20PDFs%0A%5B%20%5D%20Add%20%2449%20Layout%20%26%20Proofing%20Service%20(Attach%20logo%2C%20headshot%2C%20%26%20contact%20details)%0A%0A%3D%3D%3D%20CUSTOMIZATION%20%3D%3D%3D%0ARider%20Selections%20(Select%204%3A%20For%20Lease%20/%20Leased%20/%20For%20Sale%20/%20Custom)%3A%0ASite%20Sign%20Dimensions%20(30x36%20Coroplast)%3A" class="btn-secondary" style="width: 100%; text-align: center;">Order Commercial Kit</a>
+        </div>
+      </div>
+
+      <!-- Kit 4: Custom & Enterprise Packages -->
+      <div class="package-card custom-card">
+        <div class="card-header">
+          <h3 class="card-title">Custom & Team Packages</h3>
+          <p class="card-subtitle">Tailored volume signage for teams & brokerages</p>
+          <div class="card-price">
+            <span class="price-amount" style="font-size: 1.6rem;">Custom Quote</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul class="specs-list">
+            <li><span class="check-icon">✓</span> Custom Dimensions & Specialized Riders</li>
+            <li><span class="check-icon">✓</span> Oversized Vinyl Banners & Window Graphics</li>
+            <li><span class="check-icon">✓</span> Team-Wide & Brokerage Tiered Discounts</li>
+            <li><span class="check-icon">✓</span> Branded Apparel & Promotional Collateral</li>
+            <li><span class="check-icon">✓</span> Direct Account Manager & Priority Proofing</li>
+          </ul>
+
+          <a href="mailto:orders@fusionbizprint.com?subject=Custom%20%26%20Team%20Package%20Quote%20-%20Fusion%20Biz%20%26%20Print%20Solutions&body=Hi%20Fusion%20Biz%20%26%20Print%20Team%2C%0A%0AI%20would%20like%20to%20request%20a%20custom%20quote%20for%20a%20tailored%20print/signage%20package.%0A%0A%3D%3D%3D%20AGENT%20/%20TEAM%20DETAILS%20%3D
